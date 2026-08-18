@@ -12,10 +12,10 @@ const queue = [
 ];
 
 function organizeQueue(queue: queueSystem[]) {
-  let priorityTrue = [];
-  let priorityFalse = [];
+  let priorityTrue: queueSystem[] = [];
+  let priorityFalse: queueSystem[] = [];
 
-  for (let index = 0; index < queue.length; index++) {
+  for (let index: number = 0; index < queue.length; index++) {
     if (queue[index].priority === true) {
       priorityTrue.push(queue[index]);
     }
